@@ -3,10 +3,14 @@ var mainState = {
     preload: function () {
         // carrega o sprite do passaro 
         game.load.image('bird', 'assets/bird.png');
+        game.load.image('pipe', 'assets/pipe.png');
     },
 
     create: function () {
+        this.pipes = game.add.group();
+       
         // Muda a cor do fundo para azul
+
         game.stage.backgroundColor = '#71c5cf';
 
         // defini o sistema de fisica 
